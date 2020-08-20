@@ -6,7 +6,7 @@
 
 The plugins config allows for you to have as little or many projectiles as you want.
 
-`Spawns` - Contains the objects. Each projectile should be it's own object.<br>
+`Spawns` - Contains the objects. Each projectile should be it's own object.<br />
 `Enabled` - Enables or disables the projectile <br>
 `permission` - Individual permission for each item <br>
 `prefabs` - An array of prefabs it can spawn in (defaults to first one if random is disabled)<br>
