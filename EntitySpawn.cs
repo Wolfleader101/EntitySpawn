@@ -28,7 +28,7 @@ namespace Oxide.Plugins
 		{
 			config = Config.ReadObject<PluginConfig>();
 
-			permission.RegisterPermission("snowballspawn.use", this);
+			permission.RegisterPermission("entityspawn.use", this);
 
 			foreach (var item in config.NewItem.Values)
 			{
@@ -54,7 +54,7 @@ namespace Oxide.Plugins
 					}
 					else
 					{
-						SpawnChecks("snowballspawn.use", projectileName, EntName, item, attacker, info);
+						SpawnChecks("entityspawn.use", projectileName, EntName, item, attacker, info);
 					}
 				}
 			}

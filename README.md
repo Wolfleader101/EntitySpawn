@@ -1,2 +1,38 @@
-# EntitySpawn
- 
+## Permissions
+
+* `entityspawn.use` -- Allows player to use heal gun.
+
+## Configuration
+
+The plugins config allows for you to have as little or many projectiles as you want.
+
+`Spawns` - Contains the objects. Each projectile should be it's own object.<br>
+`Enabled` - Enables or disables the projectile <br>
+`permission` - Individual permission for each item <br>
+`prefabs` - An array of prefabs it can spawn in (defaults to first one if random is disabled)<br>
+`random` - Get random prefab from the array <br>
+
+Example Config:
+```json
+{
+  "Spawns": {
+    "snowball": {
+      "enabled": false,
+      "permission": "entityspawn.snowball",
+      "prefabs": [
+        "assets/prefabs/npc/scientist/htn/scientist_full_any.prefab"
+      ],
+      "random": false
+    },
+	"machete": {
+      "enabled": true,
+	  "permission": "entityspawn.machete",
+      "prefabs": [
+        "assets/prefabs/npc/scientist/htn/scientist_full_any.prefab",
+        "assets/rust.ai/agents/npcplayer/humannpc/heavyscientist/heavyscientist.prefab"
+      ],
+      "random": true
+    }
+  }
+}
+```
