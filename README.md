@@ -1,6 +1,6 @@
 ## Permissions
 
-* `entityspawn.use` -- Allows player to use heal gun.
+* `entityspawn.use` -- Allows player to spawn entities
 
 ## Configuration
 
