@@ -1,6 +1,6 @@
 ## Permissions
 
-* `entityspawn.use` -- Allows player to spawn entities
+* `entityspawn.use` -- Allows player to throw projectiles to spawn entities
 
 ## Configuration
 
